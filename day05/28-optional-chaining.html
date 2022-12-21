@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const user = {
+        name: "John",
+        age: 33,
+      };
+      console.log(user.salary); //underfide verdi tanimli olmayan birseye ulasmaya calistigi
+      console.log(user.salary?.tax); // ? ile user in salarisinin tax ini bulmazsa exception firlatmasin undefide versin
+      // suan bu yaptigimiz pek mantikli degil ama ya bu backend den geliyorsa. istedigin yoksa undefined olarak gecistiririm diyor Js.
+      //Cannot read properties of undefined (reading 'tax') indefid ozelliklerine ulsamaya calisiyorusun olmaz
+      //objelerde verebilecek hatayi yakaliyoruz. user.salary.tax) salary ini tax fieldina ulasmaya calisiyor yani obje olarak goruyor salary i
+      
+    </script>
+  </body>
+</html>

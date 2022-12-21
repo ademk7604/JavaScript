@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arr = [2, 56, 36, 55, 365, 89, 7, 456, 54];
+      //map bunlari gezerken bir kopyasi uzerinde calisiyor degistirebilirsin bu elemanlari
+      //() arr nin her bir degeridir
+      const newArr = arr.map(() => 2 + 2); //tek satirlik bir islem olsaydi {} ve return kullanmaya regek yok
+      const newArr1 = arr.map((item) => item * 2);
+      const newArr2 = arr.map((item) => item + 5);
+      const newArr3 = arr.map((index, item) => item * index);
+      console.log(newArr);
+      console.log(newArr1); // her degeri alip 2 ile carpip verdik
+      console.log(arr); //mevcut diziyi bozmuyor
+      console.log(newArr2);
+      console.log(newArr3);
+
+      const animals = ["fil", "kuş", "deve", "fare", "kuş", "kedi"];
+
+      const newAnimals = animals.map((animal) => animal.toUpperCase());
+      console.log(newAnimals);
+
+      const emploees = [
+        { name: "ali", location: "istanbul", gender: "M" },
+        { name: "veli", location: "izmir", gender: "M" },
+        { name: "ayse", location: "ankara", gender: "F" },
+      ];
+      const names = emploees.map((item) => item.name);
+      console.log(names);
+    </script>
+  </body>
+</html>

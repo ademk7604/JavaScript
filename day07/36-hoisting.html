@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ****** Declaration ******
+      sayHello1();
+      function sayHello1() {
+        // normalde once fonk. yukarda tanimlamali ama calisiyor bu yontemde. js func. yukarida goruyor
+        // bu isleme Hosting diyoruz Js fonk. yuriya goturur  orda tanimlar ilk orasi okunur sonra Meth call
+        alert("Hello 1");
+      }
+      // ****** Declaration ******
+
+      // ****** Expression ******
+      const sayHello2 = function () {
+        alert("Hello 2");
+      };
+      sayHello2(); //function call
+      // expression yönteminde önce function tanımlanmak zorundadır.
+      // Eğer tanımdan önce function call yapılırsa hata olur.
+      // Çünkü expression yönteminde hoisting yoktur.
+      // ****** Expression ******
+      // var ile tanımlanan değişkenlerde Hosting olur. var in degeri yukarda vermez sen yukari degersiz olarak tanimlar
+      // let ve const ta olmaz
+      console.log(x);
+      var x = 5; // bu durumda tepeye var x; olarak tanimliyor consola da undefined verir. hosting bu demek
+      function test() {
+        console.log(y);
+        var y = 5;
+        console.log(y);
+        return y;
+      }
+      const z = test();
+      console.log(z);
+      const m = test;
+      console.log(m); // m burda fonction oluyor.  kendisini getirdi
+      test();
+      m();
+    </script>
+  </body>
+</html>

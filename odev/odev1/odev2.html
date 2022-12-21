@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="textNumber" placeholder="Lutfen bir sayi giriniz">
+    <button id="btn" onclick="kontol()">Kontrol Et</button>
+
+    <script>
+        function kontol(){
+            const numberEl=document.querySelector("#textNumber").value;
+
+            const resultEl = isPalindrome(numberEl);
+            alert(`${numberEl} ->palindrome ${resultEl ?"'dir":" degildir"}`)
+        }
+
+        function isPalindrome(num){
+            let sayi =num;
+            let yeniNum=0;
+            while(sayi>0){
+             let basamak = sayi%10;
+             yeniNum = yeniNum*10+basamak;
+             sayi=Math.floor(sayi/10);
+             
+            }
+            return num==yeniNum? true: false;
+
+        }
+
+    </script>
+
+
+</body>
+</html>

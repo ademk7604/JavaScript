@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="txtName"
+      placeholder="isminizi giriniz"
+      value="ali gel"
+    />
+    <h1 id="welcome"></h1>
+    <script>
+      const nameEl = document.querySelector("#txtName");
+      const welcomeEl = document.querySelector("#welcome");
+
+      welcomeEl.innerHTML = `Merhaba ${nameEl.value}`; // eleman icinde degeri almak icin nesne.value ile aliyoruz
+    </script>
+  </body>
+</html>

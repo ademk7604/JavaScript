@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = 20;
+      let y = 30;
+      let z = 40;
+      let k = "20";
+      console.log(x == y); //false
+      console.log(x == k); //true
+      console.log(x === k); //false
+      console.log(z > k); //true
+      console.log(x > y > z); //false.//x>y false, false=0 0>z  0 kirkdan buyuk degil false
+      console.log(z > y > x); //false.//40>30 = true boolean karsiligi1 1>x false. x=0 olsaydi true gelirdi
+    </script>
+  </body>
+</html>

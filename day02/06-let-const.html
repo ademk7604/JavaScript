@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var x = 10;
+      var x = "Ali"; // var ile ayni scope de veya heryerde ayni isme birden fazla kere deger verilebilir.
+      let age = 34;
+      console.log(age);
+      age = 45;
+      console.log(age);
+
+      /*  let age = "asassa"; var age = "asasd";  const veya let ile degisken tanimladiginda, ayni scope
+      icinde ayni isimde baska bir degisken tanimlanmasina izin vermez.*/
+      //const name; ilk degerini vermedin diye hata veriyor ma let ve var da boyle bir problem yok
+
+      const name = "Ali";
+      console.log(name); //name = "veli";  okurken kiziyor Assignment to constant variable
+
+      abc = true; //undeclared - global degisken boyle olusturulur// bu tur degiskenler js en tepede tanimlanmis gibi kullanilir.
+      // bu aslinda bir bug dir. bir degisken global teanimlanmak istendiginde tepede boyle tanimlanir ama mantikli yazilimcilar classin icinde boyle yapmazlar
+      var x; //undefined var ve let const kullanmadan bir degisken atama durumudur. global bir degisken oluyor
+      console.log(abc, typeof abc);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      alert("Hello");
+      function sayHello1() {
+        alert("Hello 1");
+      }
+      sayHello1();
+      // IIFE //kendi kendini cagiran fons bu
+      (function () {
+        alert("Hello2");
+      })(); // bu sekilde fonk kendi kendini cagiriyor
+      !(function () {
+        alert("Hello3");
+      })();
+    </script>
+    <!--
+      IIFE yöntemi, büyük projelerde birden fazla harici JS dosyasının eklendiği durumlarda
+      her bir dosyadaki değişken ve fonksiyonların birbiri ile karışmasını engellemek için kullanılır
+      Her bir dosyadaki kodlar IIFE içine alınarak bir scope oluşturulup ve değişkenler ile fonksiyonların
+      yaşam alanları belirlenmiş olur
+       -->
+    <script src="../assets/js/37-iife1.js"></script>
+    <script src="../assets/js/37-iife2.js"></script>
+    <!--  IIFE -> script src olarak yazacagimiz butun kodlar orda olacak zaten suna ogrenme asamasinda html de yaziyoruz.
+      (function(){ })(); bu function yazisini her harici Js nin icine koymak lazim.
+    bu  Js lerdeki message ismindeki veriyi bur da her ikiside cagrildiginda, eger scope lari yani yasam alanlari belirlenmemis ise,
+    ayni isimdeki iki dosya ayni aynda cagrildigi icin hata verir. Ama kenki kendini cagiran methodun icinde koydugumuzda
+    yasam alani belirlenmis olur hata vermez. bu sekilde bagladigimiz bir Js dosyasaininn kendi kendini cagiran function
+    nun icine yazdigimizda benzer isimde bir veri yazarsak programimiz hata vermez.  -->
+  </body>
+</html>

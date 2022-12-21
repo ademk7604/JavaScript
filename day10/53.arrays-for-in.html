@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const animals = ["fil", "kus", "deve", "fare", "kus", "kedi"];
+
+      //FOR OF direk degerlerigeziyor veriyor
+      for (let animal of animals) {
+        console.log(animal);
+      }
+
+      for (let [i, animal] of animals.entries()) {
+        // [i, animal] of animals.entries() hem index numarasi hem degeri veriyor
+        console.log(i, animal);
+      }
+
+      //String de de calisiyor
+      for (let c of "Hello World") {
+        console.log(c);
+      }
+
+      //FOR IN
+      for (let i in animals) {
+        // iyimis
+        console.log(i, animals[i]);
+      }
+      //FOR
+      for (let i = 0; i < animals.length; i++) {
+        console.log(i);
+      }
+    </script>
+  </body>
+</html>

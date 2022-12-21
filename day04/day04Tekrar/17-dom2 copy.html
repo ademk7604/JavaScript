@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .red{
+      color: red;
+    }
+    .blue{
+      color: blue;
+    }
+    .baslik{
+      font-size: 3rem;
+      color: aquamarine;
+      padding: 1rem;
+      text-align: center;
+    } // yakinda olan eziyor kirmizi uzakta oldugu iocin aquamirine ezdi
+   
+  </style>
+</head>
+<body>
+  <h1 id="pageTitle"><em>Hello Dom</em></h1>
+  <p id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatum voluptas magni earum maiores officia reiciendis, eveniet laborum omnis reprehenderit fugiat est quia architecto eum perferendis explicabo illum consequatur sapiente.
+  Veritatis fugit necessitatibus repellendus a repellat aperiam ipsa minus incidunt cupiditate distinctio asperiores, laborum perspiciatis ipsum debitis impedit eius non quidem dolore, praesentium tempora vero quasi commodi! Illo, quisquam ullam!
+  Consectetur iure sit sint laboriosam dicta libero odio. Velit, nostrum. Quos dolore fugiat illo corporis tempora ducimus accusamus! Soluta tempora a cupiditate quidem ipsum eveniet tempore hic quasi porro ducimus.</p>
+<ul class="menu">
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact</li>
+</ul>
+<script>
+  const pT =document.querySelector("#pageTitle");
+  pT.classList.add("baslik");
+  pT.classList.add("red");
+  console.log(pT.classList);
+
+  const aboutEl = document.querySelector("#about");
+  aboutEl.classList.add("blue");
+</script>
+</body>
+</html>

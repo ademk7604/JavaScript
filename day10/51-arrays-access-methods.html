@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const animals = ["fil", "kus", "deve", "fare", "kus", "kedi"];
+      console.log(animals);
+
+      console.log(animals.includes("fil"));
+      console.log(animals.includes("kablumbaga"));
+
+      console.log(animals.indexOf("kus"));
+      console.log(animals.indexOf("kablumbaga"));
+
+      console.log(animals.lastIndexOf("kus"));
+      console.log(animals.indexOf("kablumbaga"));
+
+      console.log(animals.join()); // string olarak bize verdi.//icine ayri obje oldguunda obje diye ceviriyor
+      console.log(animals);
+      console.log(animals.join("****"));
+      console.log(animals.join("-"));
+      console.log(animals.join("")); // direk birlestiriyor
+
+      console.log(animals.slice()); // ayni diziyi geri verdi
+      console.log(animals.slice(3)); //3. indexten basladi bir dizi olusturudu bize verdi
+
+      const newAnimals = animals.slice(3);
+      console.log(newAnimals);
+
+      newAnimals.push("TEST"); // yeni bir diiz oldugu icin yenisine ekliyor
+      console.log(animals);
+      console.log(newAnimals);
+      console.log(animals.slice(1, 3)); // ilkden basliyor bitisi almiyor yani 3 e kadar 1 2.
+      console.log(animals.toString()); // aralrina , koyup bize string olarak verdi
+
+      const letters = ["G", "K", "T", "H"];
+      const numbers = [34, 56, 23, 5, 3, 58];
+
+      const mixArr = letters.concat(numbers, "Ali", 45, ["istanbul", "izmir"]);
+      console.log(mixArr);
+    </script>
+  </body>
+</html>

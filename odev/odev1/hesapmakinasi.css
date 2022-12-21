@@ -1,0 +1,26 @@
+
+.btn{
+    width: 22vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+.btn div {
+    width: 24vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.btn div button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    padding: 0;
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+}
+.gorsel{
+    border: 1px solid black;
+    width: 21vw;
+    height: 1rem;
+}

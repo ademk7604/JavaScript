@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="textN1" />
+    <select name="operators" id="op">
+      <option value="plus"></option>
+      <option value="minus"></option>
+      <option value="multiplay"></option>
+      <option value="divide"></option>
+      <option value="mod"></option>
+    </select>
+    <input type="number" name="" id="txtN2" />
+    <button onclick="Colculate()">Colculate</button>
+    <label for="" id="result">Ziya</label>
+
+    <script>
+      const number1El = document.querySelector("#txtN1");
+      const number2El = document.querySelector("#txtN2");
+      const optEl = document.querySelector("#op");
+      const resultEl = document.querySelector("#result");
+
+      function calculate() {
+        if (optEl.value == "plus") {
+          resultEl.innerText = Number(number1El.value) + Number(number2.value);
+        }
+        if (optEl.value == "minus") {
+          resultEl.innerText = Number(number1.value) - Number(number2.value);
+        }
+        console.log(optEl.value);
+
+        if (optEl.value == "multiplay") {
+          resultEl.innerText = Number(number1.value) * Number(number2.value);
+        }
+        if (optEl.value == "divide") {
+          resultEl.innerText = Number(number1.value) / Number(number2.value);
+        }
+        if (optEl.value == "mod") {
+          resultEl.innerText = Number(number1.value) % Number(number2.value);
+        }
+        console.log(optEl.value);
+      }
+    </script>
+  </body>
+</html>

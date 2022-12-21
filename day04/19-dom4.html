@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      oninput="setLiveText()"
+      id="txtName"
+      placeholder="isminizi giriniz"
+    />
+    <button onclick="sayHello()">Say Hello</button>
+    <!-- butuon tiklandiginda olsun -->
+    <h1 id="welcome"></h1>
+    <h2 id="welcome2"></h2>
+    <!-- oninput="setLiveText()" ozelligi ile buttonun icine yazdugum yaziyi hemen asagida belirtiyor fonction ile yaptik tabi -->
+    <script>
+      function sayHello() {
+        //fonction, belli bir isi yapan ihtiyac oldugunda cagrilan kod bloklaridir.
+        const nameEl = document.querySelector("#txtName");
+        const welcomeEl = document.querySelector("#welcome");
+
+        welcomeEl.innerHTML = `Merhaba ${nameEl.value}`;
+      }
+      function setLiveText() {
+        // soru; input un icine yazilan h1 e de ayni anda yazsin diyoruz onun inin oninput dedik
+        const nameEl = document.querySelector("#txtName");
+        const welcome2El = document.querySelector("#welcome2");
+
+        welcome2El.innerHTML = nameEl.value;
+      }
+    </script>
+  </body>
+</html>

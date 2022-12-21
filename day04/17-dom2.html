@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red {
+        color: red;
+      }
+      .blue {
+        color: blue;
+      }
+      .baslik {
+        font-size: 3rem;
+        color: aquamarine;
+        padding: 1rem;
+        text-align: center;
+      }
+      /*  red ve baslik baktiginda baslik h1 e daha yakin o yuzden 40 satir ezilmis oldu*/
+    </style>
+  </head>
+  <body>
+    <h1 id="pageTitle"><em>Hello DOM</em></h1>
+    <p id="about">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum optio
+      assumenda porro? Modi culpa harum eius alias at, libero earum, provident
+      iste doloremque accusantium a ab facere ipsam, reprehenderit
+      necessitatibus.
+    </p>
+    <ul class="menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    <script>
+      const pT = document.querySelector("#pageTitle"); // id # class . ile yazilir //id si pageT.. olan elemani sec dedik
+      pT.classList.add("baslik"); // baslik daha yakin oldugu icin red i ezdi.
+      pT.classList.add("red"); // css manipulation u yaptik elemani sectik ona class ekledik
+      console.log(pT.classList);
+
+      const aboutEl = document.querySelector("#about");
+      aboutEl.classList.add("blue");
+      // iki uyari var kontrol et
+    </script>
+  </body>
+</html>

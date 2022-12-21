@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const name = "ALi";
+      console.log(Boolean(name)); //true
+
+      const age = 3;
+      console.log(Boolean(age)); //true
+
+      const score = 0;
+      console.log(Boolean(score)); //false
+
+      const salary = Number("ali"); // NaN olur bunu cevirmeye calistigin dafalse
+      console.log(Boolean(score));
+
+      let message = " ";
+      console.log(Boolean(message)); //true
+
+      message = "";
+      console.log(Boolean(message)); //false.
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --color1: #ff0000;
+}
+
+.container {
+    margin: 5rem;
+    padding: 3rem;
+    border: 2px solid var(--color1);
+    border-radius: 25px;
+}
+
+#txtNub,
+#btnGuess,
+#btnStart {
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.welcome {
+    margin-bottom: 1rem;
+}
+
+.gameText {
+    margin-top: 1rem;
+}

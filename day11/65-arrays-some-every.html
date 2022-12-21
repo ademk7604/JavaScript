@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Tum elemanlar sarti saglarsa true doner
+      const prices = [50, 500, 1500, 20, 15];
+
+      if (prices.every((n) => n > 0)) {
+        //sifirtan kucuk sayi ilk bulduigunda false ile dondurmez
+        alert("Tum sayilar pozitif");
+      }
+
+      //en za bir tane sarti saglayan eleman varsa true doner
+      const prices1 = [50, 500, 1500, -20, 15];
+      if (prices.some((n) => n > 0)) {
+        alert("Bazi elemanlar pozitif");
+      }
+    </script>
+  </body>
+</html>

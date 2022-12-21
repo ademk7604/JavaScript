@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // VALUE TYPE
+      // Javascript te string, number, BigInt, ve boolean value type data tipleridir.
+      let x = 5n;
+      let y = x;
+      console.log(x === y);
+      console.log(x, y);
+      x = 21n;
+      console.log(x, y);
+      y = 35n;
+      console.log(x, y);
+      // REF TYPE
+      // Javascriptte object ve array ler referans tiplerdir
+      const car1 = { color: "red", brand: "Mercedes", model: "S500" };
+      const car2 = car1;
+      console.log(car1 === car2);
+      console.log(car1, car2);
+      //car1=12; hata verir ref degistiremiyuoruz
+      car1.color = "blue"; //degisiklige musade edebiliyor
+      console.log(car1, car2); // ayni objeye birden fazla isim vermis oluyoruz
+      console.log(car1 === car2); //ikisinin ref larini karsilastirriyoruz true.
+
+      const computer1 = { cpu: "Intel", ram: 16, disk: 512 };
+      const computer2 = { cpu: "Intel", ram: 16, disk: 512 };
+      console.log(computer1 === computer2); //butun ozellikler ayni ama rem de farkli referanslara sahipler false
+      console.log({} == {}); // ici bos iki obje//false// cunku referans tip bunlar
+      console.log([] == []); // bu dizilerdede adresleri farkli oldugundan false sonucunu verir bize
+      console.log(null === null);
+
+      console.log(typeof []);
+    </script>
+  </body>
+</html>

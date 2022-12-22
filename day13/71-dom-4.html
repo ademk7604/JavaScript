@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="message">Artik <span style="display: none">Js</span> bitmek uzere</p>
+    <script>
+      const messageEl = document.getElementById("message");
+
+      console.log(messageEl.innerText); //Artik bitmek uzere bu gizlilikten korunmak sitiyorsan textContent kullan
+      console.log(messageEl.innerHTML); //Artik <span style="display: none">Js</span> hepsini verir
+      console.log(messageEl.textContent); //innertext ile pek fark yok sadece gizlenmis elemanlar farkli var giz. gosteriyor
+      // innerText gizli elemanlari gostermiyor. textContent kullaniciya gizlileri de gosteriyor. takmiyor yani :)
+    </script>
+  </body>
+</html>
